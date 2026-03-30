@@ -53,7 +53,7 @@ public class Order {
         items.forEach(i -> sb.append(i).append("\n"));
         sb.append(String.format("Gross    : ₹%.2f%n", grossTotal));
         if (discountAmount > 0) sb.append(String.format("Discount : -₹%.2f%n", discountAmount));
-        sb.append(String.format("Total    : ₹%.2f%n", finalTotal));
+        sb.append(String.format("Total    : ₹%.2f%n", finalTotal));;
         return sb.toString();
     }
 }
